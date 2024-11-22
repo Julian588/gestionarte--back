@@ -31,7 +31,7 @@ response_model=UsuarioDTORespuesta)
 def guardarUsuario(datosPeticion:UsuarioDTOPeticion, db:Session=Depends(getDataBase) ):
     try:
         usuario=Usuario(
-            nombres=datosPeticion.nombre,
+            nombres=datosPeticion.nombres,
             edad=datosPeticion.edad,
             telefono=datosPeticion.telefono,
             correo=datosPeticion.correo,

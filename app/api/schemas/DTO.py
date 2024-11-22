@@ -2,7 +2,7 @@ from pydantic import BaseModel, Field
 from datetime import date
 
 class UsuarioDTOPeticion(BaseModel):
-    nombre:str
+    nombres:str
     edad:int
     telefono:str
     correo:str 
@@ -14,9 +14,12 @@ class UsuarioDTOPeticion(BaseModel):
 
 class UsuarioDTORespuesta(BaseModel):
     id:int
-    nombre:str
+    nombres:str
     telefono: str
     ciudad: str
+    edad:int
+    correo:str
+    contraseña:str
     class Config:
         orm_mode=True
 

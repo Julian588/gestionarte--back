@@ -13,7 +13,7 @@ class Usuario(Base):
     nombres=Column(String(50))
     edad=Column(Integer)
     telefono=Column(String(12))
-    correo=Column(String(20))
+    correo=Column(String(50))
     contraseña=Column(String(10))
     fechaRegistro=Column(Date)
     ciudad=Column(String(50))
